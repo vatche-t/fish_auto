@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:latest
+    container_name: salaryReceipt
+    hostname: pg
+    environment:
+      POSTGRES_DB: salaryReceipt
+      POSTGRES_USER: vatche
+      POSTGRES_PASSWORD: tmboozik
+    network_mode: host
+    volumes:
+      - pg-data:/var/lib/postgresql/data
+    command: -p 5858
+volumes:
+  pg-data:

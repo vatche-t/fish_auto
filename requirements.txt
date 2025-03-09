@@ -1,0 +1,8 @@
+PyMuPDF
+pandas
+python-dotenv
+PyPDF2
+pytest
+peewee
+psycopg2-binary
+python-dotenv
