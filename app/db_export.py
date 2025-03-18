@@ -43,11 +43,11 @@ class Payslip(Model):
     total_deductions = CharField(null=True)
     net_payment = CharField(null=True)
     net_payment_text = CharField(null=True)
+    chat_id = CharField(null=True)  # <-- New field to store user’s chat id
+    pdf_path = CharField(null=True)
 
     class Meta:
         database = database
-
-
 def init_db():
     """Initialize the database connection and create the table if it doesn’t exist."""
     try:
